@@ -1,3 +1,5 @@
+.. important:: READ THE BUILDING SECTION TO SEE HOW TO BUILD
+
 ===========
 QEMU README
 ===========
@@ -54,8 +56,8 @@ of other UNIX targets. The simple steps to build QEMU are:
 
   mkdir build
   cd build
-  ../configure
-  make
+  ../configure --target-list=arm-softmmu --disable-werror
+  ninja
 
 Additional information can also be found online via the QEMU website:
 
